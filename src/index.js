@@ -1,25 +1,11 @@
-import './index.html';
-import './style.css';
+import Vue from 'vue';
+import App from './components/App.vue';
 
 new Vue({
   el: '#app',
-  data: {
-    vtip: "",
-    upLikes: 0,
-    downLikes: 0,
-  },
-  methods: {
-    changeUp() {
-      console.log('changeUp');
-      this.upLikes++;
-
-    },
-    changeDown() {
-      console.log('changeDown');
-      this.downLikes++;
-    },
-  },
+  render: h => h(App),
 });
+
 
 // let upLikes = 0;
 // let downLikes = 0;
